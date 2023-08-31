@@ -1,0 +1,4 @@
+#!/bin/bash
+. "!.husky/_/husky.sh"
+
+npx lint-staged
