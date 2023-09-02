@@ -1,3 +1,5 @@
+import { IThemes } from '../types';
+
 const commonStyles = {
   primary: '#57c3fa',
   success: '#73BB5410',
@@ -21,7 +23,7 @@ const commonStyles = {
   },
 };
 
-export const Themes = {
+export const Themes: IThemes = {
   dark: {
     primaryText: '#ffffff',
     background: '#353533',

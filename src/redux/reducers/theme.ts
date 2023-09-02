@@ -1,7 +1,8 @@
 import { createReducer } from '@reduxjs/toolkit';
 import { setTheme } from '../actions';
 import { Themes } from '../../utils';
-import { IThemeInitialState, ITheme } from '../types';
+import { IThemeInitialState } from '../types';
+import { ITheme } from '../../types';
 
 const themeKey: ITheme = (localStorage.getItem('theme') as ITheme) || 'dark';
 
