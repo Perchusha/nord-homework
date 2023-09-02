@@ -5,6 +5,7 @@
   "author": "Anton Perch",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "start": "webpack serve --open --config ./webpack/webpack.dev.js",
     "build": "yarn lint && rimraf build && webpack --config ./webpack/webpack.prod.js",
     "lint": "eslint --fix --ext .ts,.tsx ./src",
