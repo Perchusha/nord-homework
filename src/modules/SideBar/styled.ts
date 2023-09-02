@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { StyledButton } from '../../components';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -26,4 +27,8 @@ export const Logo = styled.a`
   &:focus-visible {
     text-shadow: 0 0 0.8vmin ${({ theme }) => theme.active};
   }
+`;
+
+export const LoginButton = styled(StyledButton)`
+  margin: auto auto 2vmin;
 `;
