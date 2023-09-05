@@ -17,6 +17,7 @@ export interface CommonAttrs {
   xmlns: string;
   style?: React.CSSProperties;
   onClick?: (event: React.MouseEvent | React.KeyboardEvent) => void;
+  $isHovering: boolean;
 }
 
 export interface IHOCIcon extends IIcon {

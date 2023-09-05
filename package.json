@@ -10,7 +10,8 @@
     "build": "yarn lint && rimraf build && webpack --config ./webpack/webpack.prod.js",
     "format": "yarn prettier ./src --write",
     "lint": "eslint --fix --ext .ts,.tsx ./src",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
@@ -57,6 +58,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
     "husky": "^8.0.3",
     "jest": "^29.6.4",

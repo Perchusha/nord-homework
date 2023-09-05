@@ -22,6 +22,7 @@ const IconHOC = (IconComponent: React.ComponentType<IHOCIcon>) => (props: IIcon)
     xmlns: 'http://www.w3.org/2000/svg',
     style: { ...props.style },
     onClick: props.onClick,
+    $isHovering: !!props.onClick,
   };
 
   return <IconComponent {...props} commonAttributes={{ ...commonAttributes }} />;
