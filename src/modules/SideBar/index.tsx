@@ -23,6 +23,9 @@ export const SideBar = () => {
       <NavigateButton to="/servers" $active={activeLocation('servers')}>
         Servers
       </NavigateButton>
+      <NavigateButton to="/settings" $active={activeLocation('settings')}>
+        Settings
+      </NavigateButton>
       <BottomPart>
         <NavigateButton to={token ? '/logout' : '/login'}>
           {token ? 'Logout' : 'Login'}

@@ -21,6 +21,7 @@ export interface IThemeProps {
   backgroundLight: string;
   backgroundDark: string;
   border: string;
+  hover: string;
   focus: string;
   active: string;
   topBarHeight: string;

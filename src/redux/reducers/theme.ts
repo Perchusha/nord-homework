@@ -11,6 +11,9 @@ const initialState: IThemeInitialState = {
   theme: Themes[themeKey],
 };
 
+const root = document.documentElement;
+root.style.setProperty('color-scheme', themeKey === 'dark' ? 'dark' : 'light');
+
 export default createReducer(initialState, builder => {
   builder.addCase(setTheme, (state, { payload }) => {
     state.key = payload;

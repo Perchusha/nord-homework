@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   padding: 4vmin 6vmin;
-  background: ${({ theme }) => theme.backgroundLight};
+  background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.primaryText};
   border-radius: ${({ theme }) => theme.borderRadius};
   display: flex;
@@ -44,12 +44,13 @@ export const ListControls = styled.div`
   justify-content: space-between;
   font-weight: 700;
   padding: 1vmin;
-  border-bottom: 0.3vmin solid ${({ theme }) => theme.backgroundDark};
 `;
 
 export const ListWrapper = styled.div`
   overflow-y: auto;
   padding: 1vmin;
+  background: ${({ theme }) => theme.backgroundDark};
+  border: 0.3vmin solid ${({ theme }) => theme.border};
 
   ${ListElement}:not(:last-child) {
     margin-bottom: 1vmin;

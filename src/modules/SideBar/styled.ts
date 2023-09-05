@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.backgroundDark};
   border-right: 0.1vmin solid ${({ theme }) => theme.border};
   width: 30vmin;
 

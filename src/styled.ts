@@ -9,5 +9,5 @@ export const AppWrapper = styled.div`
 export const ContentWrapper = styled.div`
   width: calc(100% - 30vmin);
   padding: 2vmin;
-  background: ${({ theme }) => theme.backgroundDark};
+  background: ${({ theme }) => theme.backgroundLight};
 `;

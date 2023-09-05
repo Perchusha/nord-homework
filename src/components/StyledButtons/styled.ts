@@ -13,7 +13,7 @@ const ButtonDefaultCSS = css`
   font-weight: 400;
 
   &:hover {
-    filter: brightness(70%);
+    ${({ theme }) => theme.hover};
   }
 
   &:active {

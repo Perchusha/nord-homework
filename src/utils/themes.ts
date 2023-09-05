@@ -8,6 +8,7 @@ const commonStyles = {
   dangerText: '#ff5151',
   fontSize: '2vmin',
   titleSize: '5vmin',
+  hover: 'filter: brightness(70%)',
   focus: 'rgba(255, 255, 255, 0.3)',
   active: 'rgba(255, 255, 255, 0.4)',
   topBarHeight: '8vmin',
@@ -39,6 +40,7 @@ export const Themes: IThemes = {
     backgroundDark: '#F0F0F0',
     border: '#48484690',
     ...commonStyles,
+    hover: `opacity: 0.7`,
   },
   green: {
     primaryText: '#ffffff',
@@ -47,5 +49,6 @@ export const Themes: IThemes = {
     backgroundDark: '#76C893',
     border: '#52B69A',
     ...commonStyles,
+    primary: '#20937e',
   },
 };

@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import { HashRouter, BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { selectTheme } from './redux/selectors';
-import { SideBar, Login, Welcome, Servers, Logout } from './modules';
+import { SideBar, Login, Welcome, Servers, Logout, Settings } from './modules';
 import { ContentWrapper, AppWrapper } from './styled';
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
               <Route path="" element={<Navigate to="/welcome" />} />
               <Route path="/welcome" element={<Welcome />} />
               <Route path="/servers" element={<Servers />} />
+              <Route path="/settings" element={<Settings />} />
               <Route path="/login" element={<Login />} />
               <Route path="/logout" element={<Logout />} />
             </Routes>
