@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { StyledButton } from '../../components';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -29,6 +28,6 @@ export const Logo = styled.a`
   }
 `;
 
-export const LoginButton = styled(StyledButton)`
+export const BottomPart = styled.div`
   margin: auto auto 2vmin;
 `;

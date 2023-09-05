@@ -8,6 +8,7 @@
     "prepare": "husky install",
     "start": "webpack serve --open --config ./webpack/webpack.dev.js",
     "build": "yarn lint && rimraf build && webpack --config ./webpack/webpack.prod.js",
+    "format": "yarn prettier ./src --write",
     "lint": "eslint --fix --ext .ts,.tsx ./src",
     "test": "jest"
   },

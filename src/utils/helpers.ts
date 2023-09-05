@@ -1,7 +1,7 @@
 export const debounce = function (callback, delay: number) {
   let timer: ReturnType<typeof setTimeout> | null = null;
 
-  return (...args: any) => {
+  return (...args) => {
     if (timer) {
       clearTimeout(timer);
     }

@@ -1,15 +1,16 @@
 import { useLocation } from 'react-router';
+import { useSelector } from 'react-redux';
+import { selectToken } from '../../redux/selectors';
 import { NavigateButton } from '../../components';
-import { Wrapper, Logo, LoginButton } from './styled';
+import { Wrapper, Logo, BottomPart } from './styled';
 
 export const SideBar = () => {
   const location = useLocation();
+  const token = useSelector(selectToken);
 
   const activeLocation = (href: string) => {
     return location.pathname.indexOf(href) !== -1;
   };
-
-  const loginClickHandler = () => {};
 
   return (
     <Wrapper>
@@ -19,10 +20,14 @@ export const SideBar = () => {
       <NavigateButton to="/welcome" $active={activeLocation('welcome')}>
         Welcome
       </NavigateButton>
-      <NavigateButton to="/contacts" $active={activeLocation('contacts')}>
-        Contacts
+      <NavigateButton to="/servers" $active={activeLocation('servers')}>
+        Servers
       </NavigateButton>
-      <LoginButton onClick={loginClickHandler}>Login</LoginButton>
+      <BottomPart>
+        <NavigateButton to={token ? '/logout' : '/login'}>
+          {token ? 'Logout' : 'Login'}
+        </NavigateButton>
+      </BottomPart>
     </Wrapper>
   );
 };

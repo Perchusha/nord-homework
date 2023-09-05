@@ -19,6 +19,18 @@ const inputDefault = css`
   }
 `;
 
+export const Label = styled.label`
+  position: relative;
+  font-family: Manrope, serif;
+  font-weight: 400;
+  font-size: ${({ theme }) => theme.fontSize};
+  color: ${({ theme }) => theme.primaryText};
+
+  input {
+    margin-top: 0.5vmin;
+  }
+`;
+
 export const Input = styled.input`
   ${inputDefault}
 `;

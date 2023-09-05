@@ -15,11 +15,11 @@ const commonStyles = {
   fontFamily: 'Manrope, serif',
   borderRadius: '0.6vmin',
   devices: {
-    mobile: '(min-width: 425px)',
-    tablet: '(min-width: 768px)',
-    laptop: '(min-width: 1024px)',
-    laptopL: '(min-width: 1440px)',
-    desktop: '(min-width: 2560px)',
+    mobile: '(max-width: 425px)',
+    tablet: '(max-width: 768px)',
+    laptop: '(max-width: 1024px)',
+    laptopL: '(max-width: 1440px)',
+    desktop: '(max-width: 2560px)',
   },
 };
 

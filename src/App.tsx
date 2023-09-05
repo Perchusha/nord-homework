@@ -1,14 +1,9 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import { HashRouter, BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { selectTheme } from './redux/selectors';
-import { SideBar } from './modules';
+import { SideBar, Login, Welcome, Servers, Logout } from './modules';
 import { ContentWrapper, AppWrapper } from './styled';
-
-const Welcome = () => <div>Welcome</div>;
-
-const Contacts = () => <div>Contacts</div>;
 
 const App = () => {
   const { theme } = useSelector(selectTheme);
@@ -26,7 +21,9 @@ const App = () => {
             <Routes>
               <Route path="" element={<Navigate to="/welcome" />} />
               <Route path="/welcome" element={<Welcome />} />
-              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/servers" element={<Servers />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/logout" element={<Logout />} />
             </Routes>
           </ContentWrapper>
         </Router>
