@@ -21,6 +21,7 @@ export const Modal = styled.div`
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.background};
+  border-radius: ${({ theme }) => theme.borderRadius};
   color: ${({ theme }) => theme.primaryText};
   font-size: ${({ theme }) => theme.fontSize};
   padding: 4vmin;

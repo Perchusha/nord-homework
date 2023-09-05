@@ -105,7 +105,11 @@ export const Login = () => {
   );
 
   return (
-    <StyledModal handleClose={handleClose} isOpen={isOpen}>
+    <StyledModal
+      style={{ width: '60vmin', height: '40vmin' }}
+      handleClose={handleClose}
+      isOpen={isOpen}
+    >
       <LoginWrapper>
         <StyledInput
           label="Username"
